@@ -130,7 +130,7 @@ class _DetailPageState extends State<DetailPage> {
                                 child: Container(
                                   margin: const EdgeInsets.only(right: 10),
                                   child: AppButton(
-                                    size: 15,
+                                    size: 25,
                                     color: selectedIndex == index
                                         ? Colors.white
                                         : Colors.black,

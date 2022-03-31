@@ -16,10 +16,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   var images = {
-      "img/ballooning.png": "Ballooning",
+      "img/balloning.png": "Ballooning",
       "img/hiking.png": "Hiking",
       "img/kayaking.png": "Kayaking",
-      "img/snorkeling.png": "Snorkeling",
+      "img/snorkling.png": "Snorkeling",
   };
   @override
   Widget build(BuildContext context) {
@@ -56,24 +56,22 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   child: AppLargeText(text: "Discover"),
                 ),
                 const SizedBox(height: 20),
-                Container(
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: TabBar(
-                      labelPadding: const EdgeInsets.only(left: 20, right: 20),
-                      controller: _tabController,
-                      labelColor: Colors.black,
-                      unselectedLabelColor: Colors.grey,
-                      isScrollable: true,
-                      indicatorSize: TabBarIndicatorSize.label,
-                      indicator:
-                      CircleTabIndicator(color: AppColors.mainColor, radius: 4),
-                      tabs: const [
-                        Tab(text: "Places"),
-                        Tab(text: "Inspiration"),
-                        Tab(text: "Emotions"),
-                      ],
-                    ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TabBar(
+                    labelPadding: const EdgeInsets.only(left: 20, right: 20),
+                    controller: _tabController,
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey,
+                    isScrollable: true,
+                    indicatorSize: TabBarIndicatorSize.label,
+                    indicator:
+                    CircleTabIndicator(color: AppColors.mainColor, radius: 4),
+                    tabs: const [
+                      Tab(text: "Places"),
+                      Tab(text: "Inspiration"),
+                      Tab(text: "Emotions"),
+                    ],
                   ),
                 ),
                 Container(
@@ -149,11 +147,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 ),
                               ),
                               const SizedBox(height: 10),
-                              Container(
-                                child: AppText(
-                                  text: images.values.elementAt(index),
-                                  color: AppColors.textColor1,
-                                ),
+                              AppText(
+                                text: images.values.elementAt(index),
+                                color: AppColors.textColor1,
                               )
                             ],
                           ),
