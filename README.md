@@ -1,16 +1,27 @@
-# travel
+# Travels
 
-A new Flutter project.
+## Introduction
+Travels est une application réaliser avec le SDK Flutter.
 
-## Getting Started
+C'est une simple application permettant de découvrir une liste de lieux selon l'activitée choisies. L'application 
 
-This project is a starting point for a Flutter application.
+## Configuration
 
-A few resources to get you started if this is your first Flutter project:
+Une fois le repository clone, ne pla oublier de faire les commandes suivantes, pour éviter tout problèmes.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+flutter pub get
+flutter pub upgrade
+flutter pub outdated
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screen de l'application
+
+Welcome Page: 
+![[Welcome_page.png]](./docs/Welcome_page.png)
+
+Home Page:
+![[Home_page.png]](./docs/Home_page.png)
+
+Details Page:
+![[Details_page.png]](./docs/Details_page.png)
